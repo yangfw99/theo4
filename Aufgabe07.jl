@@ -93,7 +93,7 @@ for i in 1:length(normalizeList7a)
 end
 println("Für die Zeiten t = ", tList, " ergeben sich die Shannon Informationen: I = ", shannonInformation7a)
 
-#Plots
+##erzeugt und speichert Plots als PDF in Verzeichnis
 plots7a = []
 for i in 1:length(normalizeList7a)
     push!(plots7a, bar(positions[i],normalizeList7a[i], title = "Shannon Information I = $(shannonInformation7a[i])", label = "P[x(t=$(tList[i]))]", fillcolor = :blue, line = :black))
@@ -133,7 +133,7 @@ for i in 1:length(normalizeList7b)
 end
 println("Für die Zeiten t = ", tList, " ergeben sich die Shannon Informationen: I = ", shannonInformation7b)
 
-#Plots
+#erzeugt und speichert Plots als PDF in Verzeichnis
 plots7b = []
 for i in 1:length(normalizeList7b)
     push!(plots7b, bar(positions[i],normalizeList7b[i], title = "Shannon Information I = $(shannonInformation7b[i])", label = "P[x(t=$(tList[i]))]",legend = :topleft, fillcolor = :blue, line = :black))
